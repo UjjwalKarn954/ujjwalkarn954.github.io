@@ -106,3 +106,21 @@ main {
 .article-card p {
     color: #666;
 }
+
+
+/* styles.css */
+
+/* Reset default link styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+/* Style links inside article cards */
+.article-card h3 a {
+    color: #2c3e50; /* Dark blue color (you can adjust this to your preference) */
+}
+
+.article-card h3 a:hover {
+    color: #2980b9; /* Dark blue color on hover (you can adjust this to your preference) */
+}
