@@ -124,3 +124,32 @@ a {
 .article-card h3 a:hover {
     color: #2980b9; /* Dark blue color on hover (you can adjust this to your preference) */
 }
+
+#about {
+    background-color: #34495e; /* Dark background color */
+    color: #ffffff; /* Bright white text color */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#about p {
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about ul li a {
+    color: #ffffff;
+}
+
+#about ul li a:hover {
+    color: #f39c12; /* Orange color on hover */
+}
