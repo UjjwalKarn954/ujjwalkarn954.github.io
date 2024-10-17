@@ -14,56 +14,44 @@
             <img src="WhatsApp Image 2024-05-19 at 2.24.03 PM.jpeg" alt="Ujjwal Karn" class="profile-pic">
         </div>
     </header>
+
     <main>
         <section id="articles">
             <h2>My Articles</h2>
             <div class="article-container">
-                <div class="article-card">
+                <div class="article-card" data-aos="fade-up">
                     <h3><a href="article1.html">Article 01</a></h3>
                     <p>HOW & WHY I Started My Career as a DevOps Engineer being a fresher (Accidental DevOps Engineer)</p>
                 </div>
-                <div class="article-card">
+                <div class="article-card" data-aos="fade-up">
                     <h3><a href="article2.html">Article 02</a></h3>
                     <p>How I Was Introduced to DevOps: My Journey from Uncertainty to Passion</p>
                 </div>
-                <div class="article-card">
+                <div class="article-card" data-aos="fade-up">
                     <h3><a href="article3.html">Article 03</a></h3>
                     <p>Adapting to DevOps: My Journey and Suggestions for Freshers</p>
                 </div>
-                <div class="article-card">
+                <div class="article-card" data-aos="fade-up">
                     <h3><a href="article4.html">Article 04</a></h3>
                     <p>Overcoming DevOps Learning Challenges: A Comprehensive Guide for Beginners</p>
-                </div>
-                <div class="article-card">
-                    <h3><a href="article5.html">Article 05</a></h3>
-                    <p>What is DevOps? What really it means to be a DevOps Engineer?</p>
-                </div>
-                <div class="article-card">
-                    <h3><a href="article6.html">Article 06</a></h3>
-                    <p>What tools and technologies would you be using as a DevOps Engineer?</p>
                 </div>
             </div>
         </section>
 
-        <!-- New Summaries Section -->
         <section id="summaries">
             <h2>DevOps Summaries & Important Topics</h2>
             <div class="summary-container">
-                <div class="summary-card">
+                <div class="summary-card" data-aos="fade-up">
                     <h3><a href="summary1.html">Chapter 01 Summary</a></h3>
                     <p>Introduction to DevOps: Key Concepts and Principles</p>
                 </div>
-                <div class="summary-card">
+                <div class="summary-card" data-aos="fade-up">
                     <h3><a href="summary2.html">Chapter 02 Summary</a></h3>
                     <p>CI/CD Pipeline: Automating Software Delivery</p>
                 </div>
-                <div class="summary-card">
+                <div class="summary-card" data-aos="fade-up">
                     <h3><a href="summary3.html">Chapter 03 Summary</a></h3>
                     <p>Infrastructure as Code: Managing Cloud Resources Effectively</p>
-                </div>
-                <div class="summary-card">
-                    <h3><a href="summary4.html">Important Topic 01</a></h3>
-                    <p>Containerization: Why Docker and Kubernetes are Game Changers</p>
                 </div>
             </div>
         </section>
@@ -85,5 +73,14 @@
     <footer>
         <p>&copy; 2024 Ujjwal Karn. All rights reserved.</p>
     </footer>
+
+    <!-- Add AOS (Animate On Scroll) Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Control the animation duration
+            easing: 'ease-in-out',
+        });
+    </script>
 </body>
 </html>
