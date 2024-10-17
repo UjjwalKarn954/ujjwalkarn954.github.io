@@ -1,13 +1,13 @@
-/* General styles */
+/* Body */
 body {
-    background-color: white;
+    background-color: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-/* Header and hero section */
+/* Header */
 header {
     text-align: center;
     padding: 0;
@@ -15,87 +15,61 @@ header {
 
 .hero {
     position: relative;
-    background: url('background-image.jpg') no-repeat center center/cover;
+    background-color: #000; /* Black background */
     height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Animations */
 h1 {
     font-size: 3em;
     margin: 0;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #fff;
     object-fit: cover;
     margin-top: 20px;
-    animation: fadeInUp 1s ease-in-out;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Main content styles */
+/* Main content */
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Articles section */
+/* Articles Section */
 #articles {
-    margin-top: 20px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 #articles h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #555;
+    color: #000;
 }
 
 .article-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .article-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
     padding: 20px;
-    width: 300px;
-    transition: transform 0.3s;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .article-card:hover {
@@ -103,87 +77,66 @@ main {
 }
 
 .article-card h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #000;
 }
 
 .article-card p {
     color: #666;
 }
 
-/* Reset default link styles */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Style links inside article cards */
-.article-card h3 a {
-    color: #2c3e50;
-}
-
-.article-card h3 a:hover {
-    color: #2980b9;
-}
-
-/* Documents section */
-#documents {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-#documents h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 30px;
-}
-
-.document-card {
-    display: inline-block;
-    width: 250px;
-    padding: 20px;
-    background-color: #ecf0f1;
-    margin: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.document-card:hover {
-    transform: translateY(-10px);
-}
-
-.document-card h3 {
-    color: #34495e;
-}
-
-.document-card a {
-    color: #3498db;
-}
-
-.document-card a:hover {
-    color: #e67e22;
-}
-
-/* About section */
+/* About Section */
 #about {
-    background-color: #34495e;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
     padding: 40px;
+    border-radius: 12px;
     text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 #about p {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-/* Footer styles */
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#about ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#about ul li a:hover {
+    color: #bbb;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    background-color: #2c3e50;
+    padding: 20px;
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-card {
+        width: 100%;
+    }
 }
