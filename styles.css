@@ -1,3 +1,4 @@
+/* Universal Styles */
 body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -13,31 +14,19 @@ header {
 
 .hero {
     position: relative;
-    background: url('background-image.jpg') no-repeat center center/cover;
-    height: 60vh;
+    background: black;
+    color: white;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     font-size: 3em;
     margin: 0;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .profile-pic {
@@ -47,93 +36,82 @@ h1 {
     border: 5px solid white;
     object-fit: cover;
     margin-top: 20px;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 main {
-    padding: 20px;
+    padding: 50px 20px;
 }
 
-/* Article & Summary Sections */
-#articles, #summaries {
-    margin-top: 40px;
+/* Full Height Sections for a Long Scroll Effect */
+#articles, #summaries, #about {
+    min-height: 100vh;
     text-align: center;
 }
 
-#articles h2, #summaries h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #000; /* Black for section headers */
+#articles h2, #summaries h2, #about h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: black;
 }
 
 .article-container, .summary-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .article-card, .summary-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
     width: 300px;
-    transition: transform 0.3s;
     text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .article-card:hover, .summary-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .article-card h3, .summary-card h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #000; /* Black for titles */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: black;
 }
 
 .article-card p, .summary-card p {
-    color: #666; /* Darker grey for paragraphs */
+    color: #666;
 }
 
-/* Hover effect on article & summary links */
-.article-card h3 a, .summary-card h3 a {
-    color: #2c3e50;
+/* Scroll-triggered Animations */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(40px);
 }
 
-.article-card h3 a:hover, .summary-card h3 a:hover {
-    color: #2980b9;
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
+/* About Section */
 #about {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 40px;
+    background-color: black;
+    color: white;
+    padding: 50px;
     text-align: center;
 }
 
 #about p, #about ul {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #about ul li a {
     color: #3498db;
-    transition: color 0.3s ease;
 }
 
 #about ul li a:hover {
@@ -142,8 +120,7 @@ main {
 
 footer {
     text-align: center;
-    margin-top: 40px;
     padding: 20px;
-    background-color: #000;
+    background-color: black;
     color: white;
 }
