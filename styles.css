@@ -98,6 +98,26 @@ a {
     color: #2980b9;
 }
 
+/* DevOps Topics section styling */
+#devops-topics {
+    margin-top: 40px;
+}
+
+.topic-summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topic-summary {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* About Me section styling */
 #about {
     margin-top: 40px;
@@ -106,12 +126,13 @@ a {
 }
 
 .about-content {
-    max-width: 600px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.95em;
 }
 
 /* Highlight email and phone */
