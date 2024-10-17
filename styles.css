@@ -123,16 +123,14 @@ a {
     margin-top: 40px;
     text-align: center;
     padding: 20px;
+    background-color: #000; /* Added black background */
+    color: white; /* Change text color to white for better contrast */
 }
 
 .about-content {
-    max-width: 450px;
+    max-width: 800px; /* Increased max width for a better layout */
     margin: 0 auto;
     padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 0.95em;
 }
 
 /* Highlight email and phone */
