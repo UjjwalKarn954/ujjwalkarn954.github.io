@@ -123,12 +123,13 @@ a {
     margin-top: 40px;
     text-align: center;
     padding: 20px;
-    background-color: #000; /* Added black background */
-    color: white; /* Change text color to white for better contrast */
+    background-color: #000; /* Black background */
+    color: white; /* White text color for contrast */
+    width: 100%; /* Full width */
 }
 
 .about-content {
-    max-width: 800px; /* Increased max width for a better layout */
+    max-width: 800px; /* Maximum width for content */
     margin: 0 auto;
     padding: 10px;
 }
