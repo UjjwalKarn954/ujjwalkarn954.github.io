@@ -74,7 +74,7 @@ main {
 #articles h2, #summaries h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #000; /* Fine black for section headers */
+    color: #000; /* Black for section headers */
 }
 
 .article-container, .summary-container {
@@ -102,7 +102,7 @@ main {
 .article-card h3, .summary-card h3 {
     margin: 0;
     font-size: 1.5em;
-    color: #000; /* Fine black for titles */
+    color: #000; /* Black for titles */
 }
 
 .article-card p, .summary-card p {
