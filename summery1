@@ -54,66 +54,52 @@
             width: 100%;
         }
     </style>
+<head>
+    <title>Monolith vs Microservices</title>
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>Building Microservices: CHAPTER:1</h1>
-        </div>
-    </header>
-    <main>
-        <article>
-            <section id="Microservices">
-                <h2>Microservices</h2>
-                <p>Microservices are independently releasable service that are modeled around a Business domain.
-
-</p>
-            </section>
-
-            <section id="Key-concepts">
-                <h2>Key Concepts(Core Ideas)</h2>
-                <p>
-<ul>
-        <li>1. Independent Deploybility</li>
-        <li>2. Modeled around a business domin</li>
-        <li>3. Owning their iwn state</li>
-        <li>4. Size</li>
-        <li>5. Flexibility</li>
-        <li>6. Alignment of Architecture and organization</li>
+    <p><strong>Introduction to Microservices</strong>: Microservices architecture builds applications as a suite of small, independent services that align with specific business capabilities. Unlike monoliths, each microservice can be developed, deployed, and scaled independently, offering a flexible and modular approach to software development.</p>
+    
+    <p><strong>Monolithic Architecture</strong>: Monolithic architectures are traditional, unified models where all functions and services are interconnected within a single codebase. This design is straightforward, especially for smaller applications, and ensures that all components share common resources and dependencies.</p>
+    
+    <p><strong>Pros of Monolithic Architecture</strong>:</p>
+    <ul>
+        <li><strong>Simplicity</strong>: Easier to develop, test, and deploy as a single unit.</li>
+        <li><strong>Performance</strong>: Direct communication between components within a single codebase can lead to optimized performance.</li>
+        <li><strong>Development Speed</strong>: Ideal for small teams or startups focusing on quickly building a Minimum Viable Product (MVP).</li>
+        <li><strong>Less Infrastructure Overhead</strong>: No need for complex network management and service orchestration.</li>
     </ul>
-</p>
-            </section>
-
-            <section id="The-Monolith">
-                <h2>The Shift to Computer Science</h2>
-                <p>I completed my 3.5-year journey and reached my final semester. Honestly, I wasn't very good at Data Structures and Algorithms or any tech Field. I was just an average student. However, a few friends ( Sumit Singh, Jaskeerat Singh ) encouraged me to work on projects with them to get placed. I started doing React projects to get into frontend development. After some rejections and selections, I got placed at Medly on April 7, 2021, and began my career as an Intern Developer on April 12, 2021.</p>
-            </section>
-
-            <section id="unexpected-turn-to-devops">
-                <h2>The Unexpected Turn to DevOps</h2>
-                <p>My career truly began here. I was directly added to a DevOps team, despite having no idea what DevOps was. I was really confused about why I wasn’t asked and was just placed into DevOps. But I had to go with it. I started searching on Google and watching YouTube videos. The first thing I googled was “What is DevOps” and, like any other middle-class student, “What is the career and pay for DevOps?” I started working with the DevOps team and learned the basics in a few weeks.</p>
-            </section>
-
-            <section id="embracing-devops">
-                <h2>Embracing DevOps</h2>
-                <p>One day, my manager ( Shirish Padalkar )  asked for a call. I was scared, wondering if it was my last day. But my manager explained that they hadn’t asked for my preference because they wanted me to explore DevOps. As a fresher, no one would easily choose it. They asked me what I wanted to do next. By then, I had already started liking DevOps, so I decided to continue.
-</p>
-            </section>
-
-            <section id="present-and-future">
-                <h2>The Present and Future</h2>
-                <p>I had many questions and doubts about DevOps, its career path, and pay. But today, I am glad I chose DevOps. I have no more doubts or questions. I love it and enjoy it, and this is what I will continue to do. I was always scared if I would be able to become a good developer and compete. But this journey has been great. Today, I proudly introduce myself as a DevOps Engineer. Every day, I strive to learn and become better in this field. There is a lot to learn and achieve in the future. I will share my journey of the first DevOps technologies and tools I was introduced to, what I learned first, how my tech journey progressed, and the challenges I faced in my next articles.
-
-For now, I just wanted to share how I became a DevOps Engineer and why.
-
-</p>
-            </section>
-
-            <section id="gratitude">
-                <h2>Gratitude</h2>
-                <p>I would like to take this opportunity to thank my friends Sumit Singh and JS Grewal for the guidance and push they gave me during my college days. I also want to express my gratitude to my colleagues at Medly—Ram Shinde, Ashwini, Shirish, Kunal Dabir, Kaustav, and Niraj—who have helped shape me into the professional I am today and what I will become in the future.</p>
-            </section>
-        </article>
-    </main>
+    
+    <p><strong>Cons of Monolithic Architecture</strong>:</p>
+    <ul>
+        <li><strong>Scalability Limitations</strong>: Scaling requires replicating the entire application, which is inefficient and can lead to resource waste.</li>
+        <li><strong>Tight Coupling</strong>: Changes in one part of the application can affect the entire system, making updates and maintenance difficult.</li>
+        <li><strong>Deployment Bottlenecks</strong>: Any change, even minor, necessitates redeploying the entire application, leading to longer downtime and increased risk.</li>
+        <li><strong>Lack of Flexibility</strong>: Difficult for different teams to work on separate parts of the codebase concurrently without causing conflicts.</li>
+    </ul>
+    
+    <p><strong>Monolith vs. Microservices – Pros and Cons</strong>:</p>
+    <p><strong>Microservices Pros</strong>:</p>
+    <ul>
+        <li><strong>Scalability</strong>: Each service can be scaled independently based on its resource needs.</li>
+        <li><strong>Resilience</strong>: Failure of one service does not bring down the entire system.</li>
+        <li><strong>Faster Deployment</strong>: Teams can develop, test, and deploy services independently, improving development cycles.</li>
+        <li><strong>Technology Flexibility</strong>: Teams can choose different tech stacks or languages suited to individual service requirements.</li>
+    </ul>
+    
+    <p><strong>Microservices Cons</strong>:</p>
+    <ul>
+        <li><strong>Complexity</strong>: Managing a distributed system requires advanced infrastructure and monitoring solutions.</li>
+        <li><strong>Communication Overhead</strong>: Inter-service communication introduces latency and potential failures.</li>
+        <li><strong>Data Consistency Challenges</strong>: Ensuring consistency across services can be complex, especially when services have their own databases.</li>
+        <li><strong>Deployment and DevOps Maturity</strong>: Requires strong CI/CD pipelines and container orchestration, adding to initial complexity and resource requirements.</li>
+    </ul>
+    
+    <p><strong>Choosing Between Monolith and Microservices</strong>:</p>
+    <p><strong>Monolithic Approach</strong>: Ideal for small applications, startups, or teams with limited DevOps expertise and resources. If the project is simple and has a foreseeable, non-complex growth path, starting with a monolithic structure can be effective.</p>
+    
+    <p><strong>Microservices Approach</strong>: Suitable for larger, complex applications where scalability, team autonomy, and faster deployment cycles are needed. Microservices work best when the organization has the expertise in DevOps, robust monitoring practices, and the infrastructure to handle distributed systems.</p>
+    
+    <p><strong>Conclusion</strong>: Choosing between monolith and microservices depends on the project's scale, team expertise, and long-term goals. Start with a monolith if the application is simple, and consider refactoring into microservices as the project grows in complexity. For organizations anticipating significant scaling and a need for flexibility, microservices can be the strategic choice from the beginning.</p>
 </body>
 </html>
